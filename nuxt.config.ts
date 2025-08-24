@@ -1,4 +1,3 @@
-
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   app: {
@@ -25,7 +24,7 @@ export default defineNuxtConfig({
     '@unocss/nuxt',
     '@vueuse/nuxt',
     '@nuxt/ui',
-      '@nuxt/image'
+    '@nuxt/image',
   ],
   css: ['~/assets/styles.css'],
   imports: {
@@ -33,4 +32,5 @@ export default defineNuxtConfig({
   },
   image: {
     dir: 'assets',
-  },})
+  },
+})
