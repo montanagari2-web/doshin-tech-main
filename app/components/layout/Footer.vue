@@ -72,7 +72,7 @@ const schema = [
           <ul class="text-sm space-y-4">
             <li v-for="(subItem, subIndex) in item.items" :key="subIndex" class="border-muted/50 w-fit hover:border-b">
               <NuxtLink
-                :to="subItem.name"
+                to="/"
                 class="text-muted-foreground hover:text-foreground transition-colors"
               >
                 {{ subItem.name }}
@@ -88,13 +88,13 @@ const schema = [
         </p>
         <div class="flex gap-4">
           <NuxtLink
-            to="/privacy"
+            to="/"
             class="text-muted-foreground hover:text-foreground text-xs transition-colors"
           >
             Privacy Policy
           </NuxtLink>
           <NuxtLink
-            to="/terms"
+            to="/"
             class="text-muted-foreground hover:text-foreground text-xs transition-colors"
           >
             Terms of Service
