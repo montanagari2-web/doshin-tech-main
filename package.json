@@ -4,14 +4,36 @@
   "private": true,
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxt dev",
+    "dev": "nuxt dev --port=8990",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix"
   },
   "dependencies": {
-    "nuxt": "^4.0.3",
-    "vue": "^3.5.18",
-    "vue-router": "^4.5.1"
+    "@nuxt/fonts": "0.11.0",
+    "@nuxt/image": "^1.10.0",
+    "@nuxt/ui": "2",
+    "eslint": "^9.0.0",
+    "nuxt": "^3.16.1",
+    "typescript": "^5.6.3",
+    "valibot": "^1.1.0",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^4.11.0",
+    "@iconify-json/ph": "^1.2.2",
+    "@unocss/eslint-plugin": "^66.0.0",
+    "@unocss/nuxt": "66.1.0-beta.7",
+    "@unocss/preset-icons": "66.1.0-beta.7",
+    "@unocss/preset-web-fonts": "66.1.0-beta.7",
+    "@unocss/preset-wind4": "66.1.0-beta.7",
+    "@vueuse/core": "^13.0.0",
+    "@vueuse/nuxt": "^13.0.0",
+    "eslint": "^9.23.0",
+    "eslint-plugin-format": "^1.0.1",
+    "unocss": "66.1.0-beta.7"
   }
 }
